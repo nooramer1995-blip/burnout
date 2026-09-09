@@ -1,0 +1,226 @@
+[
+  {
+    "sleep": 8,
+    "meetings": 2,
+    "weekends": false,
+    "stress": 2,
+    "outcome": "Healthy"
+  },
+  {
+    "sleep": 7.5,
+    "meetings": 3,
+    "weekends": false,
+    "stress": 3,
+    "outcome": "Healthy"
+  },
+  {
+    "sleep": 8.5,
+    "meetings": 1,
+    "weekends": false,
+    "stress": 2,
+    "outcome": "Healthy"
+  },
+  {
+    "sleep": 7,
+    "meetings": 4,
+    "weekends": false,
+    "stress": 4,
+    "outcome": "Healthy"
+  },
+  {
+    "sleep": 8,
+    "meetings": 3,
+    "weekends": true,
+    "stress": 3,
+    "outcome": "Healthy"
+  },
+  {
+    "sleep": 7.5,
+    "meetings": 2,
+    "weekends": false,
+    "stress": 5,
+    "outcome": "Healthy"
+  },
+  {
+    "sleep": 9,
+    "meetings": 1,
+    "weekends": false,
+    "stress": 1,
+    "outcome": "Healthy"
+  },
+  {
+    "sleep": 7,
+    "meetings": 2,
+    "weekends": true,
+    "stress": 4,
+    "outcome": "Healthy"
+  },
+  {
+    "sleep": 6.5,
+    "meetings": 5,
+    "weekends": false,
+    "stress": 6,
+    "outcome": "Risk of burnout"
+  },
+  {
+    "sleep": 6,
+    "meetings": 4,
+    "weekends": true,
+    "stress": 5,
+    "outcome": "Risk of burnout"
+  },
+  {
+    "sleep": 7,
+    "meetings": 6,
+    "weekends": false,
+    "stress": 6,
+    "outcome": "Risk of burnout"
+  },
+  {
+    "sleep": 6.5,
+    "meetings": 3,
+    "weekends": true,
+    "stress": 6,
+    "outcome": "Risk of burnout"
+  },
+  {
+    "sleep": 5.5,
+    "meetings": 4,
+    "weekends": false,
+    "stress": 5,
+    "outcome": "Risk of burnout"
+  },
+  {
+    "sleep": 7.5,
+    "meetings": 5,
+    "weekends": true,
+    "stress": 5,
+    "outcome": "Risk of burnout"
+  },
+  {
+    "sleep": 6,
+    "meetings": 6,
+    "weekends": false,
+    "stress": 6,
+    "outcome": "Risk of burnout"
+  },
+  {
+    "sleep": 8,
+    "meetings": 7,
+    "weekends": false,
+    "stress": 6,
+    "outcome": "Risk of burnout"
+  },
+  {
+    "sleep": 5,
+    "meetings": 6,
+    "weekends": true,
+    "stress": 8,
+    "outcome": "Vacation required"
+  },
+  {
+    "sleep": 5.5,
+    "meetings": 7,
+    "weekends": false,
+    "stress": 8,
+    "outcome": "Vacation required"
+  },
+  {
+    "sleep": 6,
+    "meetings": 6,
+    "weekends": true,
+    "stress": 7,
+    "outcome": "Vacation required"
+  },
+  {
+    "sleep": 4.5,
+    "meetings": 5,
+    "weekends": true,
+    "stress": 7,
+    "outcome": "Vacation required"
+  },
+  {
+    "sleep": 6.5,
+    "meetings": 8,
+    "weekends": true,
+    "stress": 8,
+    "outcome": "Vacation required"
+  },
+  {
+    "sleep": 5,
+    "meetings": 4,
+    "weekends": false,
+    "stress": 8,
+    "outcome": "Vacation required"
+  },
+  {
+    "sleep": 7,
+    "meetings": 7,
+    "weekends": true,
+    "stress": 8,
+    "outcome": "Vacation required"
+  },
+  {
+    "sleep": 5.5,
+    "meetings": 8,
+    "weekends": true,
+    "stress": 7,
+    "outcome": "Vacation required"
+  },
+  {
+    "sleep": 4,
+    "meetings": 8,
+    "weekends": true,
+    "stress": 10,
+    "outcome": "Critical condition"
+  },
+  {
+    "sleep": 3.5,
+    "meetings": 9,
+    "weekends": true,
+    "stress": 9,
+    "outcome": "Critical condition"
+  },
+  {
+    "sleep": 5,
+    "meetings": 10,
+    "weekends": true,
+    "stress": 10,
+    "outcome": "Critical condition"
+  },
+  {
+    "sleep": 4.5,
+    "meetings": 8,
+    "weekends": false,
+    "stress": 9,
+    "outcome": "Critical condition"
+  },
+  {
+    "sleep": 6,
+    "meetings": 9,
+    "weekends": true,
+    "stress": 10,
+    "outcome": "Critical condition"
+  },
+  {
+    "sleep": 4,
+    "meetings": 7,
+    "weekends": true,
+    "stress": 9,
+    "outcome": "Critical condition"
+  },
+  {
+    "sleep": 5.5,
+    "meetings": 10,
+    "weekends": false,
+    "stress": 10,
+    "outcome": "Critical condition"
+  },
+  {
+    "sleep": 3,
+    "meetings": 6,
+    "weekends": true,
+    "stress": 9,
+    "outcome": "Critical condition"
+  }
+]
