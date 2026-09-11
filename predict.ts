@@ -9,7 +9,7 @@ export const predict = (
     if (node.type === "leaf") {
         return node.prediction;
     }
-    // בשאלת סופי שבוע: true הולך לשמאל, false לימין
+    //סוף שבוע,  
     if (node.feature === "weekends") {
         if (input.weekends === true) {
             return predict(node.left, input);
