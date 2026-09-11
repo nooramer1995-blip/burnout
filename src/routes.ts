@@ -1,9 +1,9 @@
 import express from "express";
-import { records } from "./data";
-import { buildTree } from "./tree";
-import type { TreeNode } from "./tree";
-import { predict } from "./predict";
-import { isValidBurnoutInput } from "./validation";
+import { records } from "../data";
+import { buildTree } from "../tree";
+import type { TreeNode } from "../tree";
+import { predict } from "../predict";
+import { isValidBurnoutInput } from "../validation";
 
 const app = express();
 
