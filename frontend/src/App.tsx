@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import './App.css'
+import type { TreeNode } from '../../shared/tree'
+import DecisionTree from './components/DecisionTree'
 
 function App() {
   const [sleep, setSleep] = useState(8)
@@ -8,10 +10,14 @@ function App() {
   const [stress, setStress] = useState(5)
   const [prediction, setPrediction] = useState('')
   const [isLoading, setIsLoading] = useState(false)
-  
+  const [errorMessage, setErrorMessage] = useState('')
+  const [tree, setTree] = useState<TreeNode | null>(null)
+
   async function handlePredict() {
     setIsLoading(true)
     setPrediction('')
+    setErrorMessage('')
+    setTree(null)
 
     const input = {
       sleep: sleep,
@@ -46,8 +52,20 @@ function App() {
       }
 
       setPrediction(data.prediction)
+      // קבלת העץ שכבר נבנה בבאקנד
+      const treeResponse = await fetch('/api/tree')
+
+      if (!treeResponse.ok) {
+        setErrorMessage('Prediction succeeded, but the tree could not be loaded.')
+        return
+      }
+
+      const treeData = await treeResponse.json()
+      setTree(treeData.tree)
     } catch (error) {
       console.error(error)
+      setErrorMessage('Unable to predict right now. Please try again.')
+
     } finally {
       setIsLoading(false)
     }
@@ -122,8 +140,13 @@ function App() {
       >
         {isLoading ? 'Predicting...' : 'Predict burnout'}
       </button>
-      {/* מראה את תוצאות החיזוי */}
+      
+      {errorMessage && (
+        <p role="alert">{errorMessage}</p>
+      )}
 
+
+      {/* מראה את תוצאות החיזוי */}
       {prediction !== '' ? (
         <div>
           <h2>Your result</h2>
@@ -131,6 +154,13 @@ function App() {
         </div>
       ) : null}
 
+      {/*מציג את האזור רק כשיש עץ*/}
+       {tree && (
+        <section>
+          <h2>Decision tree</h2>
+          <DecisionTree node={tree} />
+        </section>
+      )}
     </main>
   )
 }

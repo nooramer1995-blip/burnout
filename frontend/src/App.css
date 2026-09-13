@@ -62,3 +62,81 @@ input[type="checkbox"] {
   accent-color: #6554c0;
   cursor: pointer;
 }
+.tree-container {
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 24px 0;
+}
+
+.tree-container>.tree-branch {
+  width: max-content;
+  min-width: 100%;
+}
+
+.tree-branch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tree-node {
+  box-sizing: border-box;
+  width: 160px;
+  padding: 14px;
+  border: 2px solid #7560c4;
+  border-radius: 10px;
+  background: #f3efff;
+  color: #222;
+  text-align: center;
+}
+
+.tree-children {
+  display: flex;
+  padding-top: 24px;
+  position: relative;
+}
+
+.tree-children::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 24px;
+  border-left: 2px solid #aaa;
+}
+
+.tree-children>div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; /*תמקם אותו ביחס לאזזור שנמצא בו*/
+  padding: 24px 16px 0;
+}
+/*קווים אופקיים*/
+.tree-children>div::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 24px;
+  border-top: 2px solid #aaa;
+}
+
+
+/*קווים אנכיים*/
+/*::before מוסיף חלק חזותי לאלמנט בלי ליצור תגית בREACT*/
+.tree-children>div:first-child::before {
+  right: 0;
+  border-left: 2px solid #aaa;
+}
+
+.tree-children>div:last-child::before {
+  left: 0;
+  border-right: 2px solid #aaa;
+}
+
+.tree-children>div>span {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #555;
+}

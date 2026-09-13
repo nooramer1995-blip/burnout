@@ -1,23 +1,7 @@
 import type { BurnoutLevel, BurnoutRecord } from "./data";
 import { findBestQuestion } from "./split";
-
-// הגדרת עלה נקודת סיום בקוד 
-type LeafNode = {
-    type: "leaf";
-    prediction: BurnoutLevel;
-    samples: number;
-};
-
-type QuestionNode = {
-    type: "question";
-    feature: "sleep" | "meetings" | "stress" | "weekends";
-    threshold: number | null;// סופש הסף יהיה NULL 
-    samples: number;
-    left: TreeNode;
-    right: TreeNode;
-};
-
-export type TreeNode = LeafNode | QuestionNode;//כל ענף יכול להסתיים בתוצאה או להמשיך לשאלה נוספת.
+import type { TreeNode } from './shared/tree'
+export type { TreeNode } from './shared/tree'
 
 // פומקצית בניית העץ תהיה ריקורסיבית אנחנו כל פעם נקטין את הערבוב עד שנגיע לעלה 
 export const buildTree = (records: BurnoutRecord[]): TreeNode => {
@@ -83,7 +67,7 @@ export const buildTree = (records: BurnoutRecord[]): TreeNode => {
     const rightTree = buildTree(rightGroup);
 
     // מחברים את שני העצים לשאלה הנוכחית
-    const questionNode: QuestionNode = {
+    const questionNode: TreeNode = {
         type: "question",
         feature: feature,
         threshold: threshold,
