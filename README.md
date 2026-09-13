@@ -123,6 +123,8 @@ The following manual checks were performed during development:
 | Restart the backend and submit again | Prediction succeeded and the previous error message disappeared |
 | Retrieve the trained tree | Nested JSON was displayed in the frontend |
 | Render the recursive tree | Conditions, Yes/No labels, connectors and colored leaves were displayed |
+| Algorithm calculations | Five checks passed for entropy, Information Gain and candidate split thresholds |
+| Invalid prediction input | Validation correctly rejected null, arrays, missing fields, wrong types and out-of-range values |
 
 ## AI Collaboration
 

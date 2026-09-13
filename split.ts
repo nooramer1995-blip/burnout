@@ -44,7 +44,7 @@ export const findBestSplit = (
     return { bestSplit, bestGain };
 };
 
-// בוחרת את השאלה הטובה ביותר מבין המאפיינים המספריים
+// בוחרת את השאלה הטובה ביותר מבין המאפיינים 
 export const findBestQuestion = (records: BurnoutRecord[]) => {
     // רשימת המאפיינים המספריים שנבדוק
     const features: NumericFeature[] = [
