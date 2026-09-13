@@ -142,7 +142,7 @@ I was already familiar with APIs and TypeScript before this project. I used Chat
 ## Submission Links
 
 - GitHub repository: [View repository](https://github.com/nooramer1995-blip/burnout)
-- Deployed application: 
+- Deployed application: [Open app](https://burnout-orcin.vercel.app/)
 
 
 
