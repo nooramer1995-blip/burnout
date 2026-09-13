@@ -92,7 +92,8 @@ app.post("/api/predict", (req, res) => {
     }
 });
 
-// מפעילים את השרת בפורט 3000
-app.listen(3000, () => {
-    console.log("Server is listening  at http://localhost:3000");
+const port = Number(process.env.PORT) || 3000;
+
+app.listen(port, () => {
+    console.log(`Server is listening on port ${port}`);
 });

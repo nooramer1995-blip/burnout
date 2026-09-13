@@ -7,8 +7,8 @@
             "node"
         ],
         "strict": true,
-        "noEmit": true
-    },
+        "outDir": "./dist",
+        "rootDir": "."    },
     "include": [
         "*.ts"
 , "src/routes.ts"    ]
