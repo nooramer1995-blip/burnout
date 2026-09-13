@@ -1,5 +1,4 @@
-import type { BurnoutLevel } from '../data'
-
+import type { BurnoutLevel } from "./burnout";
 // הגדרת עלה נקודת סיום בקוד 
 type LeafNode = {
     type: "leaf";

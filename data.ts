@@ -1,12 +1,8 @@
 import { readFileSync } from "node:fs";
+import type { BurnoutLevel } from "./shared/burnout";
+export type { BurnoutLevel } from "./shared/burnout";
 
 //#region Types
-export type BurnoutLevel =
-    | "Healthy"
-    | "Risk of burnout"
-    | "Vacation required"
-    | "Critical condition";
-
 export type BurnoutRecord = {
     sleep: number;
     meetings: number;
